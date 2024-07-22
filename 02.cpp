@@ -1,10 +1,11 @@
-// https://www.naukri.com/code360/problems/number-of-digits_9173?utm_source=youtube&utm_medium=affiliate&utm_campaign=striver_Arrayproblems&leftPanelTabValue=PROBLEM
+// Count Digits
+// https://bit.ly/3X17nIr
 
 
 int countDigits(int n){
     int count=0;
-		while(n>0){
-	    count++;
+	while(n>0){
+	   count++;
 	    n=n/10;
 	}
 	return count;

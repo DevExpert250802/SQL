@@ -33,8 +33,8 @@ int* printDivisors(int n, int&size){
 
 
 
-
 // T.C.=O(N)
+//S.C. = O(sqrt(N))
 
 Approach 2 :
 
@@ -58,4 +58,29 @@ int* printDivisors(int n, int&size){
 
 
 
+// T.C. = O(sqrt(N)) + nlogn
+//S.C. = O(sqrt(N))
+
+
+
+
+
+int* printDivisors(int n, int&size){
+    int*arr = new int[n];
+    size =0;
+    for(int i=1;i<=sqrt(n);i++){
+        if(n%i==0){
+            arr[size++] = i;
+            if((n/i) !=i){
+                arr[size++] = n/i;
+            }
+        }
+    }
+    sort (arr,arr+size);
+    return arr;
+}
+
+
+
 // T.C. = O(sqrt(N))
+//S.C. = O(sqrt(N))

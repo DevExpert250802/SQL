@@ -19,7 +19,7 @@ class Solution {
 class Solution {
 public:
     double myPow(double x, int n) {
-        int pow = abs(n);
+        long long pow = abs(n);
         double ans =1.0;
         while(pow>0){
             if(pow%2==1){
@@ -45,23 +45,26 @@ public:
 class Solution {
 public:
     double myPow(double x, int n) {
-        int m=n;
-        if(n<0) n= n*-1;
+        long long m = n;
+        if(m<0) m= m*-1;
         double ans =1.0;
-        while(n>0){
-            if(n%2==1){
+        while(m>0){
+            if(m%2==1){
                 ans=ans*x;
-                n=n-1;
+                m=m-1;
             }
             else{
-                n=n/2;
+                m=m/2;
                 x=x*x;
             }
         }
-        if(<0) ans= 1.0/ans;
+        if(n<0) ans= 1.0/ans;
         return ans;
     }
 };
+
+
+T.C. = O(log2(n))
 
 
 

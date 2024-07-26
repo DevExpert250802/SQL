@@ -1,3 +1,5 @@
+/*
+
 https://codeforces.com/problemset/problem/17/A
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -62,6 +64,7 @@ power:                    Computes x^y % p using binary exponentiation.
 getarraygcd:              Computes the GCD of an array.
 modulo_div:               Computes a / b % mod using modular inverse.
 ncrfact:                  Computes nCr using factorials (not fully implemented).
+*/
 */
 #include <bits/stdc++.h>
 #include <ext/pb_ds/tree_policy.hpp>
